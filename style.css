@@ -1053,7 +1053,7 @@ button[data-state="desktop"] {
 }
 
 .b-contact__success[data-state="hidden"] {
-  visibility: none;
+  visibility: hidden;
   background-color: transparent;
 }
 
