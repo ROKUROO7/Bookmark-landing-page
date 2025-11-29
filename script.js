@@ -2,7 +2,7 @@ const hero = document.getElementById("hero")
 const featureTabContainer = document.getElementById("feature-tab-container")
 
 document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver((entries, observe) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       entry.target.dataset.animation = "slide"
       if (entry.isIntersecting) observer.unobserve(entry.target)
@@ -83,9 +83,9 @@ const loadData = async () => {
   featureTabOptions.forEach((btn) => {
     btn.addEventListener("click", () => {
       value = btn.value
-      featureTabOptions.forEach((btn) => {
-        btn.children[0].dataset.state = "none"
-        btn.disabled = true
+      featureTabOptions.forEach((butn) => {
+        butn.children[0].dataset.state = "none"
+        butn.disabled = true
       })
       btn.children[0].dataset.state = "selected"
       featureTabImg.src = data[value].image
