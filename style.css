@@ -997,12 +997,10 @@ body[data-overflow="hidden"] {
 
 .b-tab-head[data-animation="slide"] {
   animation: 1s slide-right ease-in-out;
-  -webkit-animation: 1s slide-right ease-in-out;
 }
 
 .b-tab-head[data-animation="slide-right"] {
   animation: 1s slide-right ease-in-out;
-  -webkit-animation: 1s slide-right ease-out;
 }
 
 .b-tab__section[data-animation="fade-out-scale"] {
