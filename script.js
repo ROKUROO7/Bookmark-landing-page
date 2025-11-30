@@ -103,7 +103,6 @@ const loadData = async () => {
   featureTabContainer.addEventListener("animationend",() => {
     featureTabContainer.dataset.animation = "none"
     featureTabSection.dataset.animation = "none"
-    featureTabSection.dataset.state = "visible"
     featureTabOptions.forEach((btn) => {
       btn.disabled = false
     })
